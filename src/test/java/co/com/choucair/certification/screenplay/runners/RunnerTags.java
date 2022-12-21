@@ -1,14 +1,19 @@
 package co.com.choucair.certification.screenplay.runners;
 
 
+import cucumber.api.SnippetType;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-@RunWith(Cucumber.class)
+@RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features"
-        ,glue={"co.com.choucair.certification.screenplay.definition"}
+        , snippets = SnippetType.CAMELCASE
+        , tags = "@HistoriaDeusuario"
+        , glue = "co.com.choucair.certification.screenplay.definition"
+
 )
 
 public class RunnerTags {
