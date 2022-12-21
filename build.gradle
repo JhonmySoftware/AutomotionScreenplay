@@ -1,19 +1,29 @@
-plugins {
-    id 'java'
-}
-
-group 'org.example'
-version '1.0-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
-
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9")
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '1.7.0'
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.7'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '1.9.9'
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '1.9.9'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.5'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '1.9.9'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '1.9.9'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
 }
-
-test {
-    useJUnitPlatform()
-}
+gradle.startParameter.continueOnFailure = true
