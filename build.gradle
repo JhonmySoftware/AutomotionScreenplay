@@ -25,5 +25,6 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '1.9.9'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '1.9.9'
     implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
+
 }
 gradle.startParameter.continueOnFailure = true
