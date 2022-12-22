@@ -1,6 +1,7 @@
 package co.com.choucair.certification.screenplay.definition;
 
 import co.com.choucair.certification.screenplay.tasks.AbrirPagina;
+import co.com.choucair.certification.screenplay.tasks.Ingresar;
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
@@ -20,20 +21,20 @@ public class Mydefinitions {
     }
 
     @Dado("^que Jhon Quiñones ingresa a la app XTTT$")
-    public void que_Jhon_Quiñones_ingresa_a_la_app_XTTT() throws Exception {
+    public void que_Jhon_Quiñones_ingresa_a_la_app_XTTT() {
         OnStage.theActorCalled("Jhon Quiñones").wasAbleTo(AbrirPagina.urlApp());
-        throw new PendingException();
+
     }
 
 
     @Cuando("^digita sus credenciales e ingresa a la app$")
-    public void digita_sus_credenciales_e_ingresa_a_la_app(DataTable arg1) throws Exception {
-        throw new PendingException();
+    public void digita_sus_credenciales_e_ingresa_a_la_app() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Ingresar.credenciales());
     }
 
     @Entonces("^verifica que pudo ingresar correctamente$")
-    public void verifica_que_pudo_ingresar_correctamente() throws Exception {
-        throw new PendingException();
+    public void verifica_que_pudo_ingresar_correctamente() {
+
     }
 
 

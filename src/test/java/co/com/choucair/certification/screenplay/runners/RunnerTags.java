@@ -12,9 +12,7 @@ import cucumber.api.junit.Cucumber;
         features = "src/test/resources/features"
         , snippets = SnippetType.CAMELCASE
         , tags = "@HistoriaDeusuario"
-        , glue = "co.com.choucair.certification.screenplay.definition"
-
-)
+        , glue = "co.com.choucair.certification.screenplay.definition")
 
 public class RunnerTags {
 
