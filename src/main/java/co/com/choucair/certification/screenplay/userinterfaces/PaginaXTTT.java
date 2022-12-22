@@ -10,4 +10,5 @@ public class PaginaXTTT extends PageObject {
     public static final Target TXT_USUARIO = Target.the("Ingresar Usuario").located(By.xpath("//*[@id=\"login\"]/form/input[1]"));
     public static final Target TXT_CONTRASENA = Target.the("Ingresar Clave").located(By.xpath("//*[@id=\"login\"]/form/input[2]"));
     public static final Target BTN_SING_IN = Target.the("Botón Ingresar").located(By.xpath("//*[@id=\"login\"]/form/button"));
+    public static final Target LBL_MENU = Target.the("Botón Ingresar").located(By.xpath("//*[@id=\"menu\"]/li[1]"));
 }

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verificar el ingreso correcto al app XTTT" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-22T01:08:58" hostname="CHBOGPF34MNC5" time="16.976">
+<testsuite name="Verificar el ingreso correcto al app XTTT" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-22T01:29:41" hostname="CHBOGPF34MNC5" time="29.898">
   <properties/>
-  <testcase name="verificar ingreso correcto" classname="Verificar el ingreso correcto al app XTTT" time="16.976"/>
+  <testcase name="verificar ingreso correcto" classname="Verificar el ingreso correcto al app XTTT" time="29.898"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[dic 21, 2022 8:08:58 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[dic 21, 2022 8:29:41 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 31084
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 18800
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic 21, 2022 8:09:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dic 21, 2022 8:29:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
